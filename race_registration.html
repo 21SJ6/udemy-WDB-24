@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Race Register Form</title>
+<head>
+    <h1>Race Registration!</h1>
+</head>
+<!-- how I created a marathon registration form before watching a solution ( ◡̀_◡́)ᕤ -->
+<body>
+    <form>
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" required>
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" required>
+    </form>
+<div>
+    <p>Select a Race:</p>
+</div>
+    <form>
+        <input type="radio" id="funRun" name="race" value="funRun" required>
+        <label for="funRun">Fun Run 5k</label><br>
+        <input type="radio" id="HalfM" name="race" value="HalfM" required> 
+        <label for="HalfM">Half Marathon</label><br>
+        <input type="radio" id="FullM" name="race" value="FullM" required>
+        <label for="FullM">Full Marathon</label>
+    </form>
+    <form>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required><br>
+        <label for="">Select Age Group</label>
+        <select>
+            <option value="teens">under 18</option>
+            <option value="ya">18-29</option>
+            <option value="adults">30-59</option>
+            <option value="seniors">60+</option>
+        </select><br>
+        <input type="submit" value="Register!">
+    </form>
+</body>
+</html>
