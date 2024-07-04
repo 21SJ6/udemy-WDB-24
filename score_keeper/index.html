@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scales=1.0"></meta>
+        <title>Score Keeper</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+    <body>
+        <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+
+                        <div class="card-content">
+
+                            <div class="box">
+                                <figure class="image is-1by1">
+                                    <img src="ezgif-2-4a39c412c6.gif" type="ping pong gif">
+                                </figure>
+                            </div>
+
+                            <header class="card-header">
+                                <p class="card-header-title is-size-1">Ping Pong Score Keeper</p>
+                            </header>
+
+                          <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                          <div class="content">
+                            <p class="subtitle">Use the buttons below to keep score</p>
+                            <label for="playto" class="label is-large is-inline">Playing To </label>
+                            <div class="select is-rounded">
+                                <select name="" id="playto">
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                          </div>
+
+                        <div class="buttons">
+                            <button id="p1Button" class="button is-primary"><i class="fas fa-table-tennis"></i> +1 Player One
+                            </button>
+                            <button id="p2Button" class="button is-info"><i class="fas fa-table-tennis"></i> +1 Player Two</button>
+                            <button id='reset' class="button is-danger">Reset</button>
+                        </div>
+
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <script src="app.js"></script>
+        
+    </body>
+</html>
